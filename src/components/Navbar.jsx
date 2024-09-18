@@ -56,10 +56,10 @@ const Navbar = () => {
                     <img className='w-7' onClick={()=>setShowMenu(false)} src={assets.cross_icon} alt="" />
                 </div>
                 <ul className='flex flex-col items-center gap-2 mt-5 text-lg font-medium'>
-                    <NavLink to="/">HOME</NavLink>
-                    <NavLink to="/doctors">ALL DOCTORS</NavLink>
-                    <NavLink to="/about">ABOUT</NavLink>
-                    <NavLink to="/contact">CONTACT</NavLink>
+                    <NavLink onClick={()=>setShowMenu(false)} to="/">HOME</NavLink>
+                    <NavLink onClick={()=>setShowMenu(false)} to="/doctors">ALL DOCTORS</NavLink>
+                    <NavLink onClick={()=>setShowMenu(false)} to="/about">ABOUT</NavLink>
+                    <NavLink onClick={()=>setShowMenu(false)} to="/contact">CONTACT</NavLink>
                 </ul>
             </div>
         </div>
